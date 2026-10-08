@@ -17,6 +17,7 @@ app.get('/api/health', (_request, response) => {
     status: 'ok',
   });
 });
+
 app.get('/api/version', (_request, response) => {
   
   response.json({
