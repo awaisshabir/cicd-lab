@@ -45,6 +45,6 @@ test('GET /api/version returns the current version', async () => {
 
   assert.equal(response.status, 200);
   assert.deepEqual(await response.json(), {
-    status: 'ok',
+    version: process.env.APP_VERSION ?? 'development',
   });
 });
